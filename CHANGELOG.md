@@ -21,6 +21,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Grocy logo and name in headers.
 - `README.md` with project description and setup instructions.
 - `CHANGELOG.md` to track project changes.
+- Visual indicator ("Added" button state) on product listings for items currently in the cart.
+- Pagination for product listings and search results (8 items per page).
 
 ### Changed
 - Product catalog (`products.json`) updated with image URLs and prices.
