@@ -48,7 +48,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
                             <path d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"></path>
                         </svg>
-                        <span id="cart-item-count-badge" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center" style="display: none;">0</span>
+                        <span id="cart-item-count-badge" class="absolute -top-1.5 -right-1.5 bg-red-500 text-white text-[10px] leading-none rounded-full h-5 w-5 flex items-center justify-center" style="display: none;">0</span>
                     </div>
                     <p class="text-neutral-500 text-xs font-medium leading-normal tracking-[0.015em]">Cart</p>
                 </a>
@@ -83,7 +83,20 @@
             <h3 id="product-list-title" class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Recommended</h3>
             <div id="product-grid" class="flex flex-col p-1"> <!-- Changed to flex column and reduced padding -->
                 <!-- Product items will be injected here by script.js -->
-                <!-- Example Product Item Structure (for script.js reference)
+            </div>
+            <div id="no-products-message" class="text-center text-neutral-500 p-4" style="display: none;">
+                No products found.
+            </div>
+            <div id="pagination-controls" class="flex justify-between items-center p-4">
+                <button id="prev-page-button" class="bg-neutral-200 hover:bg-neutral-300 text-neutral-700 font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed">
+                    Previous
+                </button>
+                <span id="page-info" class="text-neutral-600">Page 1 of 1</span>
+                <button id="next-page-button" class="bg-neutral-200 hover:bg-neutral-300 text-neutral-700 font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed">
+                    Next
+                </button>
+            </div>
+            <!-- Example Product Item Structure (for script.js reference)
                 <div class="flex items-center gap-3 p-3 border-b border-gray-200 product-item hover:bg-gray-50">
                     <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" style='background-image: url("...");'></div>
                     <div>

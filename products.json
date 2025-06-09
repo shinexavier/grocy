@@ -1,92 +1,227 @@
 [
-    {
-        "id": "prod001",
-        "name": "Whole Milk",
-        "make": "Amul",
-        "description": "Pasteurized full cream milk",
-        "category": "Dairy",
-        "price": "$3.49/gal",
-        "imageUrl": "https://images.unsplash.com/photo-1550583724-b2692b85b190?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=300&q=60"
-    },
-    {
-        "id": "prod002",
-        "name": "Brown Bread",
-        "make": "Britannia",
-        "description": "Whole wheat bread slices",
-        "category": "Bakery",
-        "price": "$2.00/loaf",
-        "imageUrl": "https://images.unsplash.com/photo-1580955836023-7c95105bs4e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnJlYWQlMjBsb2FmfGVufDB8fDB8fHww&auto=format&fit=crop&w=300&q=60"
-    },
-    {
-        "id": "prod003",
-        "name": "Eggs",
-        "make": "Local Farm",
-        "description": "Pack of 12 farm fresh eggs",
-        "category": "Dairy & Poultry",
-        "price": "$4.99/dozen",
-        "imageUrl": "https://images.unsplash.com/photo-1587486913049-53c838199694?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWdnc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=300&q=60"
-    },
-    {
-        "id": "prod004",
-        "name": "Basmati Rice",
-        "make": "India Gate",
-        "description": "Premium long grain basmati rice 1kg",
-        "category": "Grains",
-        "price": "$10.00/kg",
-        "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmljZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=300&q=60"
-    },
-    {
-        "id": "prod005",
-        "name": "Green Tea",
-        "make": "Lipton",
-        "description": "Pure and light green tea bags, 25 count",
-        "category": "Beverages",
-        "price": "$5.50/box",
-        "imageUrl": "https://images.unsplash.com/photo-1627435601361-ec25f3c8d075?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3JlZW4lMjB0ZWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=300&q=60"
-    },
-    {
-        "id": "prod006",
-        "name": "Olive Oil",
-        "make": "Figaro",
-        "description": "Extra virgin olive oil 500ml",
-        "category": "Oils",
-        "price": "$8.00/bottle",
-        "imageUrl": "https://images.unsplash.com/photo-1600150806193-cf8402974893?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b2xpdmUlMjBvaWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=300&q=60"
-    },
-    {
-        "id": "prod007",
-        "name": "Almonds",
-        "make": "Generic",
-        "description": "California almonds 250g pack",
-        "category": "Dry Fruits",
-        "price": "$6.00/pack",
-        "imageUrl": "https://images.unsplash.com/photo-1600689048930-d39240506975?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWxtb25kc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=300&q=60"
-    },
-    {
-        "id": "prod008",
-        "name": "Tomato Ketchup",
-        "make": "Maggi",
-        "description": "Rich tomato ketchup, 500g bottle",
-        "category": "Condiments",
-        "price": "$3.00/bottle",
-        "imageUrl": "https://images.unsplash.com/photo-1608061614013-b7565009e079?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2V0Y2h1cHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=300&q=60"
-    },
-    {
-        "id": "prod009",
-        "name": "Instant Coffee",
-        "make": "Nescafe",
-        "description": "Classic instant coffee powder 100g",
-        "category": "Beverages",
-        "price": "$7.00/jar",
-        "imageUrl": "https://images.unsplash.com/photo-1511920183303-510470597513?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&w=300&q=60"
-    },
-    {
-        "id": "prod010",
-        "name": "Digestive Biscuits",
-        "make": "McVities",
-        "description": "High fiber digestive biscuits",
-        "category": "Snacks",
-        "price": "$4.00/pack",
-        "imageUrl": "https://images.unsplash.com/photo-1590080919404-0985f0f15f0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmlzY3VpdHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=300&q=60"
-    }
+  {
+    "id": "1",
+    "name": "Aashirvaad Atta",
+    "make": "ITC",
+    "description": "Whole wheat flour",
+    "category": "Staples",
+    "price": "180",
+    "imageUrl": "images/aashirvaad_atta.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Tata Salt",
+    "make": "Tata",
+    "description": "Iodized salt",
+    "category": "Staples",
+    "price": "25",
+    "imageUrl": "images/tata_salt.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Basmati Rice (1kg)",
+    "make": "India Gate",
+    "description": "Premium basmati rice",
+    "category": "Staples",
+    "price": "150",
+    "imageUrl": "images/basmati_rice.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Toor Dal (1kg)",
+    "make": "Generic",
+    "description": "Split pigeon peas",
+    "category": "Dals & Pulses",
+    "price": "120",
+    "imageUrl": "images/toor_dal.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Moong Dal (1kg)",
+    "make": "Generic",
+    "description": "Split green gram",
+    "category": "Dals & Pulses",
+    "price": "130",
+    "imageUrl": "images/moong_dal.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Sugar (1kg)",
+    "make": "Madhur",
+    "description": "Refined sugar",
+    "category": "Staples",
+    "price": "50",
+    "imageUrl": "images/sugar.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Sunflower Oil (1L)",
+    "make": "Fortune",
+    "description": "Refined sunflower oil",
+    "category": "Oils & Ghee",
+    "price": "160",
+    "imageUrl": "images/sunflower_oil.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Amul Ghee (500ml)",
+    "make": "Amul",
+    "description": "Pure cow ghee",
+    "category": "Oils & Ghee",
+    "price": "280",
+    "imageUrl": "images/amul_ghee.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Red Label Tea (250g)",
+    "make": "Brooke Bond",
+    "description": "Black tea leaves",
+    "category": "Beverages",
+    "price": "110",
+    "imageUrl": "images/red_label_tea.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Bru Instant Coffee (50g)",
+    "make": "Bru",
+    "description": "Instant coffee powder",
+    "category": "Beverages",
+    "price": "90",
+    "imageUrl": "images/bru_coffee.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Turmeric Powder (100g)",
+    "make": "Everest",
+    "description": "Haldi powder",
+    "category": "Spices",
+    "price": "40",
+    "imageUrl": "images/turmeric_powder.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Chilli Powder (100g)",
+    "make": "Everest",
+    "description": "Lal mirch powder",
+    "category": "Spices",
+    "price": "55",
+    "imageUrl": "images/chilli_powder.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Coriander Powder (100g)",
+    "make": "MDH",
+    "description": "Dhania powder",
+    "category": "Spices",
+    "price": "35",
+    "imageUrl": "images/coriander_powder.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Garam Masala (50g)",
+    "make": "Everest",
+    "description": "Blend of ground spices",
+    "category": "Spices",
+    "price": "70",
+    "imageUrl": "images/garam_masala.jpg"
+  },
+  {
+    "id": "15",
+    "name": "Parle-G Biscuits (Family Pack)",
+    "make": "Parle",
+    "description": "Glucose biscuits",
+    "category": "Snacks & Biscuits",
+    "price": "60",
+    "imageUrl": "images/parle_g.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Maggi Noodles (Masala 4-pack)",
+    "make": "Nestle",
+    "description": "Instant noodles",
+    "category": "Snacks & Biscuits",
+    "price": "56",
+    "imageUrl": "images/maggi_noodles.jpg"
+  },
+  {
+    "id": "17",
+    "name": "Amul Milk (1L Tetra Pak)",
+    "make": "Amul",
+    "description": "Toned milk",
+    "category": "Dairy",
+    "price": "70",
+    "imageUrl": "images/amul_milk.jpg"
+  },
+  {
+    "id": "18",
+    "name": "Britannia Bread (White)",
+    "make": "Britannia",
+    "description": "Sliced white bread",
+    "category": "Dairy",
+    "price": "45",
+    "imageUrl": "images/britannia_bread.jpg"
+  },
+  {
+    "id": "19",
+    "name": "Onions (1kg)",
+    "make": "Local",
+    "description": "Fresh onions",
+    "category": "Vegetables",
+    "price": "40",
+    "imageUrl": "images/onions.jpg"
+  },
+  {
+    "id": "20",
+    "name": "Potatoes (1kg)",
+    "make": "Local",
+    "description": "Fresh potatoes",
+    "category": "Vegetables",
+    "price": "30",
+    "imageUrl": "images/potatoes.jpg"
+  },
+  {
+    "id": "21",
+    "name": "Tomatoes (1kg)",
+    "make": "Local",
+    "description": "Fresh tomatoes",
+    "category": "Vegetables",
+    "price": "50",
+    "imageUrl": "images/tomatoes.jpg"
+  },
+  {
+    "id": "22",
+    "name": "Colgate Toothpaste (100g)",
+    "make": "Colgate",
+    "description": "Dental cream",
+    "category": "Personal Care",
+    "price": "65",
+    "imageUrl": "images/colgate_toothpaste.jpg"
+  },
+  {
+    "id": "23",
+    "name": "Lifebuoy Soap (Total 10)",
+    "make": "Lifebuoy",
+    "description": "Germ protection soap bar",
+    "category": "Personal Care",
+    "price": "35",
+    "imageUrl": "images/lifebuoy_soap.jpg"
+  },
+  {
+    "id": "24",
+    "name": "Surf Excel Detergent (1kg)",
+    "make": "HUL",
+    "description": "Washing powder",
+    "category": "Household",
+    "price": "140",
+    "imageUrl": "images/surf_excel.jpg"
+  },
+  {
+    "id": "25",
+    "name": "Vim Dishwash Bar",
+    "make": "HUL",
+    "description": "Dishwashing bar",
+    "category": "Household",
+    "price": "20",
+    "imageUrl": "images/vim_bar.jpg"
+  }
 ]

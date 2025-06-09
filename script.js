@@ -17,7 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let shoppingCart = []; // Structure: { id, name, make, description, category, price, imageUrl, quantity }
     let currentView = 'listing'; // 'listing' or 'cart'
     let fetchErrored = false; // Flag to track if product loading failed
-
+    let currentPage = 1;
+    const itemsPerPage = 8; // Number of items to display per page
+    let currentActiveProductList = []; // Holds the full list being paginated (either all products or filtered results)
+    
     // --- 1. LOAD PRODUCT CATALOG (CALLED ONCE ON STARTUP) ---
     async function loadProductCatalogAndUpdateView() {
         fetchErrored = false; // Reset error state
@@ -35,27 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
             productCatalog = []; // Ensure catalog is empty on error
         }
 
-        // After fetch attempt (success or fail), update the product grid if we're on the listing page
+        // After fetch attempt (success or fail), update the listing page if it's the current view.
         if (currentView === 'listing') {
-            const productGrid = pageView.querySelector('#product-grid');
-            const productListTitle = pageView.querySelector('#product-list-title');
-            const noProductsMessage = pageView.querySelector('#no-products-message');
-            const searchBar = pageView.querySelector('#search-bar');
-
-            if (productGrid && productListTitle && noProductsMessage) { // Ensure elements are there
-                if (fetchErrored) {
-                    productListTitle.textContent = 'Error';
-                    renderProductGrid([], productGrid, noProductsMessage, "Could not load products. Please try again later.");
-                } else {
-                    // If there's an active search term from a previous state (unlikely on initial load here, but good for robustness)
-                    if (searchBar && searchBar.value.length >= 2) {
-                        searchBar.dispatchEvent(new Event('input'));
-                    } else {
-                        productListTitle.textContent = 'Recommended';
-                        renderProductGrid(productCatalog.slice(0, 8), productGrid, noProductsMessage, "No products available at the moment.");
-                    }
-                }
-            }
+            showListingPage(); // This will now handle pagination correctly
         }
     }
 
@@ -64,79 +49,128 @@ document.addEventListener('DOMContentLoaded', () => {
         pageView.innerHTML = '';
     }
 
-    function showListingPage() { // Parameter 'showRecommended' removed for simplification
+    function updateDisplayedProductsAndPagination() {
+        const productGrid = pageView.querySelector('#product-grid');
+        const noProductsMessage = pageView.querySelector('#no-products-message');
+        const productListTitle = pageView.querySelector('#product-list-title');
+        const prevPageButton = pageView.querySelector('#prev-page-button');
+        const nextPageButton = pageView.querySelector('#next-page-button');
+        const pageInfo = pageView.querySelector('#page-info');
+        const paginationControls = pageView.querySelector('#pagination-controls');
+
+        if (!productGrid || !noProductsMessage || !prevPageButton || !nextPageButton || !pageInfo || !paginationControls || !productListTitle) {
+            console.error("Pagination or product display elements not found!");
+            return;
+        }
+
+        const totalItems = currentActiveProductList.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+        // Ensure currentPage is within valid bounds
+        if (currentPage < 1) currentPage = 1;
+        if (currentPage > totalPages && totalPages > 0) currentPage = totalPages;
+        if (totalPages === 0) currentPage = 1; // if no items, still page 1 of 0 or 1 of 1
+
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const productsToDisplayThisPage = currentActiveProductList.slice(startIndex, endIndex);
+
+        renderProductGrid(productsToDisplayThisPage, productGrid, noProductsMessage, productListTitle.textContent === 'Search Results' ? "No products match your search." : "No products available at the moment.");
+        
+        pageInfo.textContent = `Page ${currentPage} of ${totalPages || 1}`;
+        prevPageButton.disabled = currentPage === 1;
+        nextPageButton.disabled = currentPage === totalPages || totalPages === 0;
+
+        if (totalPages <= 1) {
+            paginationControls.style.display = 'none';
+        } else {
+            paginationControls.style.display = 'flex';
+        }
+    }
+
+
+    function showListingPage() {
         currentView = 'listing';
         clearPageView();
         const listingContent = listingPageTemplate.content.cloneNode(true);
         pageView.appendChild(listingContent);
 
-        // Update nav active state
         navHome.classList.remove('text-neutral-500');
         navHome.classList.add('text-[#141414]');
         navCart.classList.remove('text-[#141414]');
         navCart.classList.add('text-neutral-500');
 
         const searchBar = pageView.querySelector('#search-bar');
-        const productGrid = pageView.querySelector('#product-grid');
         const productListTitle = pageView.querySelector('#product-list-title');
-        const noProductsMessage = pageView.querySelector('#no-products-message');
-        // headerCartButton and cartItemCountBadgeHeader removed
+        const prevPageButton = pageView.querySelector('#prev-page-button');
+        const nextPageButton = pageView.querySelector('#next-page-button');
 
-        if (!searchBar || !productGrid || !productListTitle || !noProductsMessage) { // headerCartButton removed from check
-            console.error("Critical listing page elements not found after template clone!");
+        if (!searchBar || !productListTitle || !prevPageButton || !nextPageButton) {
+            console.error("Critical listing page elements (search, title, pagination buttons) not found!");
             pageView.innerHTML = "<p class='text-red-500 p-4 text-center'>Error: UI components failed to load. Please refresh.</p>";
             return;
         }
-
+        
         searchBar.addEventListener('input', (e) => {
             const searchTerm = e.target.value.toLowerCase().trim();
-            console.log('Search input event. Term:', searchTerm, 'Current productCatalog size:', productCatalog.length); // Log search term and catalog size
+            currentPage = 1; // Reset to first page on new search
 
             if (fetchErrored) {
                 productListTitle.textContent = 'Error';
-                renderProductGrid([], productGrid, noProductsMessage, "Product catalog unavailable. Search disabled.");
-                return;
-            }
-
-            if (searchTerm.length === 0) {
+                currentActiveProductList = [];
+            } else if (searchTerm.length === 0) {
                 productListTitle.textContent = 'Recommended';
-                renderProductGrid(productCatalog.slice(0, 8), productGrid, noProductsMessage, "No products available at the moment.");
-                return;
-            }
-            if (searchTerm.length < 2) {
-                productGrid.innerHTML = ''; // Clear grid if search term is too short
-                noProductsMessage.style.display = 'none';
-                return;
-            }
-
-            const filteredProducts = productCatalog.filter(product =>
-                product.name.toLowerCase().includes(searchTerm) ||
-                (product.make && product.make.toLowerCase().includes(searchTerm)) ||
-                (product.description && product.description.toLowerCase().includes(searchTerm))
-            );
-            console.log('Filtered products count:', filteredProducts.length); // Log filtered products count
-            productListTitle.textContent = 'Search Results';
-            renderProductGrid(filteredProducts, productGrid, noProductsMessage); // Uses default "No products found."
-        });
-        
-        // headerCartButton.addEventListener('click', showCartPage); // Listener removed
-
-        // Determine initial content for the product grid when showListingPage is called
-        if (fetchErrored) { // If a previous fetch (or current if loadProductCatalogAndUpdateView already ran) failed
-            productListTitle.textContent = 'Error';
-            renderProductGrid([], productGrid, noProductsMessage, "Could not load products. Please try again later.");
-        } else if (productCatalog.length > 0) { // Catalog is loaded and has items
-            const currentSearchTerm = searchBar.value; // Preserve search if navigating back
-            if (currentSearchTerm && currentSearchTerm.length >= 2) {
-                 searchBar.dispatchEvent(new Event('input')); // Re-trigger search
+                currentActiveProductList = productCatalog;
+            } else if (searchTerm.length < 2) {
+                productListTitle.textContent = 'Search Results'; // Or 'Type more to search'
+                currentActiveProductList = []; // Clear list if search term too short, effectively showing no results via pagination
             } else {
-                productListTitle.textContent = 'Recommended';
-                renderProductGrid(productCatalog.slice(0, 8), productGrid, noProductsMessage, "No products available at the moment.");
+                productListTitle.textContent = 'Search Results';
+                currentActiveProductList = productCatalog.filter(product =>
+                    product.name.toLowerCase().includes(searchTerm) ||
+                    (product.make && product.make.toLowerCase().includes(searchTerm)) ||
+                    (product.description && product.description.toLowerCase().includes(searchTerm))
+                );
             }
-        } else { // Catalog not yet loaded (productCatalog is empty, fetchErrored is false) or loaded but empty
+            updateDisplayedProductsAndPagination();
+        });
+
+        prevPageButton.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                updateDisplayedProductsAndPagination();
+            }
+        });
+
+        nextPageButton.addEventListener('click', () => {
+            // Total pages needs to be calculated based on currentActiveProductList
+            const totalPages = Math.ceil(currentActiveProductList.length / itemsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                updateDisplayedProductsAndPagination();
+            }
+        });
+
+        // Initial display logic
+        const currentSearchTerm = searchBar.value.toLowerCase().trim();
+        if (fetchErrored) {
+            productListTitle.textContent = 'Error';
+            currentActiveProductList = [];
+        } else if (currentSearchTerm.length >= 2) { // If there was a search term (e.g. navigating back)
+            productListTitle.textContent = 'Search Results';
+             currentActiveProductList = productCatalog.filter(product =>
+                product.name.toLowerCase().includes(currentSearchTerm) ||
+                (product.make && product.make.toLowerCase().includes(currentSearchTerm)) ||
+                (product.description && product.description.toLowerCase().includes(currentSearchTerm))
+            );
+        } else { // Default view (no search or short search term)
             productListTitle.textContent = 'Recommended';
-            renderProductGrid([], productGrid, noProductsMessage, "Loading products...");
+            currentActiveProductList = productCatalog;
         }
+        // currentPage should be preserved if navigating back, otherwise default to 1.
+        // For simplicity now, let's assume it might have been set by a previous view or defaults to 1.
+        // A more robust solution might store/restore currentPage with search term.
+        updateDisplayedProductsAndPagination();
         updateCartBadges();
     }
 
@@ -173,14 +207,22 @@ document.addEventListener('DOMContentLoaded', () => {
             nameP.textContent = product.name;
             const priceP = document.createElement('p');
             priceP.className = 'text-neutral-500 text-sm font-normal leading-normal product-price';
-            priceP.textContent = product.price || '$?.??';
+            priceP.textContent = `₹${product.price || '?.??'}`;
             infoDiv.appendChild(nameP);
             infoDiv.appendChild(priceP);
 
             // Add to Cart Button - aligned to the right
             const addButton = document.createElement('button');
-            addButton.className = 'add-to-cart-button bg-[#141414] hover:bg-neutral-700 text-white font-bold py-2 px-3 rounded text-sm shrink-0';
-            addButton.textContent = 'Add'; // Shorter text for smaller button
+            const isInCart = shoppingCart.some(item => item.id === product.id);
+
+            if (isInCart) {
+                addButton.className = 'add-to-cart-button bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-3 rounded text-sm shrink-0';
+                addButton.textContent = 'Add'; // Changed from 'Added'
+            } else {
+                addButton.className = 'add-to-cart-button bg-[#141414] hover:bg-neutral-700 text-white font-bold py-2 px-3 rounded text-sm shrink-0';
+                addButton.textContent = 'Add';
+            }
+            
             addButton.addEventListener('click', (e) => {
                 e.stopPropagation(); // Prevent triggering click on itemContainer if needed
                 addProductToCart(product);
@@ -243,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nameP.textContent = item.name;
             const priceP = document.createElement('p');
             priceP.className = 'text-neutral-500 text-sm font-normal leading-normal line-clamp-2 product-price-info';
-            priceP.textContent = `${item.price || '$?.??'}`; // Could add 'per unit' if available
+            priceP.textContent = `₹${item.price || '?.??'}`; // Could add 'per unit' if available
 
             descDiv.appendChild(nameP);
             descDiv.appendChild(priceP);
@@ -292,13 +334,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         updateCartBadges();
         // Optionally, provide feedback like "Item added to cart"
-        // If on cart page, re-render
+        // If on cart page, re-render. If on listing page, re-render to update "Added" buttons.
         if (currentView === 'cart') {
             const cartItemsContainer = pageView.querySelector('#cart-items-container');
             const emptyCartMessage = pageView.querySelector('#empty-cart-message');
             if (cartItemsContainer && emptyCartMessage) {
                  renderCartItems(cartItemsContainer, emptyCartMessage);
             }
+        } else if (currentView === 'listing') {
+            showListingPage(); // Re-render listing page to update button states
         }
         console.log('Cart:', shoppingCart);
     }
@@ -314,11 +358,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 shoppingCart = shoppingCart.filter(p => p.id !== productId);
             }
         }
-        // Re-render cart items if on cart page
+        // Re-render cart items if on cart page. If on listing page, re-render to update "Added" buttons.
         if (currentView === 'cart') {
             const cartItemsContainer = pageView.querySelector('#cart-items-container');
             const emptyCartMessage = pageView.querySelector('#empty-cart-message');
             renderCartItems(cartItemsContainer, emptyCartMessage);
+        } else if (currentView === 'listing') {
+            showListingPage(); // Re-render listing page if an item might have been removed or added
         }
         updateCartBadges();
     }
@@ -326,11 +372,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleRemoveItem(event) {
         const productId = event.target.closest('.cart-item').dataset.productId;
         shoppingCart = shoppingCart.filter(p => p.id !== productId);
-        // Re-render cart items if on cart page
+        // Re-render cart items if on cart page. If on listing page, re-render to update "Added" buttons.
         if (currentView === 'cart') {
             const cartItemsContainer = pageView.querySelector('#cart-items-container');
             const emptyCartMessage = pageView.querySelector('#empty-cart-message');
             renderCartItems(cartItemsContainer, emptyCartMessage);
+        } else if (currentView === 'listing') {
+            showListingPage(); // Re-render listing page
         }
         updateCartBadges();
     }
@@ -342,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cartItemCountBadgeNav = document.getElementById('cart-item-count-badge'); // Re-fetch in case of template cloning
         if (cartItemCountBadgeNav) {
             if (totalItems > 0) {
-                cartItemCountBadgeNav.textContent = totalItems;
+                cartItemCountBadgeNav.textContent = totalItems > 99 ? '99+' : totalItems;
                 cartItemCountBadgeNav.style.display = 'flex';
             } else {
                 cartItemCountBadgeNav.style.display = 'none';
