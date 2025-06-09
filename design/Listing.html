@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-neutral-50 justify-between group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div>
+        <div class="flex items-center bg-neutral-50 p-4 pb-2 justify-between">
+          <h2 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">Grocery App</h2>
+          <div class="flex w-12 items-center justify-end">
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#141414] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+            >
+              <div class="text-[#141414]" data-icon="ShoppingCart" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="px-4 py-3">
+          <label class="flex flex-col min-w-40 h-12 w-full">
+            <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+              <div
+                class="text-neutral-500 flex border-none bg-[#ededed] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                data-icon="MagnifyingGlass"
+                data-size="24px"
+                data-weight="regular"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                </svg>
+              </div>
+              <input
+                placeholder="Search for products"
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#ededed] focus:border-none h-full placeholder:text-neutral-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                value=""
+              />
+            </div>
+          </label>
+        </div>
+        <h3 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Recommended</h3>
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+          <div class="flex flex-col gap-3 pb-3">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_6Nn__-3xmW-gmdM0WA85xRfsFGIjRYT5xuRXuFdULABY7ewbO_U07tQmC71-OJQgI4zciDl5RJmjgFThEm4WbANqO7u9_8XnRSRO93oYC0-nFofQPImsURS_0kigN6hYIzKcxGfd_Lpd9qjc8fX8qZ-JM_22nA93cQ2Vq1iCdhqMi-9O5V863dhrnCzcYVdnlIEC1EZrYOzn2SqT9WupJhDE71OJBWWAA_V99cYr7-N1CmvKFwb7B45Z62nnQrYtjiz7PcatkHc");'
+            ></div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">Fresh Apples</p>
+              <p class="text-neutral-500 text-sm font-normal leading-normal">$2.99/lb</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBULOafSuxVSwPivV8uaIOKjx7YCeeCuxr0Uy9OKuj2a82g5koVz_0ahfLcVBbJv8HkcgupDo4jocF_ZQiPKQAv8RofDGehaU8NllfuUWNTaYhp0tU7PcRkXRZdM5yVUbrRcypXkUwMg5P7a57iC9z5eUiRx86Uojb1jUVLOkWRRxmwfEUnIks8-Q93x3VKIS7CXg7mpsYUc83xbr4-S5xJ3wxd05SwvsOvAFkk-1c9SBaeQzDgj8WYsfuSRND8erOcb3cMI9Q03BI");'
+            ></div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">Organic Bananas</p>
+              <p class="text-neutral-500 text-sm font-normal leading-normal">$0.59/lb</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTKKnDmJr3LVDuMS5XGqgVaBrpFJfByYpd3VSqWCVC-W8NQo0yDkZl9mVHRnkqVLbs0LqXZ2YEjOceQ8HpiXBIHgBweWQj2nbnWzMITHZRexGrvzCiCyPE7aUCgC39ov2TzmQssc-24iev0XhiehJu7OSr_GsbsqVMEB5rlfHBW2V3xcXzfXl7Sktd7DFsHcOdR0AphXCth9AwaGKLRpQtUON1Z-K4XGdpa7m6W7SuNwpkFB1lh-VPF_wIKF7Al8Jm36zBI0QCL_Y");'
+            ></div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">Whole Milk</p>
+              <p class="text-neutral-500 text-sm font-normal leading-normal">$3.49/gal</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQx1YWMSDPO2kxHJMvngt_Xy6mGFCfus9RvUkGG8Tt4y9dgh8KFX9s8NeQBWAgRfkSt1Wbuv566UY2w0jiNkNSEwiARwak54MQLAFdJUKaI7DAKE9S8h9ptWFtI0InCqVApdxkWq4XtSFY-EPjNfAx3Ng3k_E7_-2ZnXJ_l7N4XM7857q3LjCeadbr-sy4tdV9FCKs8ilX9Hi_2CyLWQRArG6E0vZ7PJ2MInUP99aZpqZev6YEel64c7tyVJkQx5cHFEfQJ9FmdPM");'
+            ></div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">Free-Range Eggs</p>
+              <p class="text-neutral-500 text-sm font-normal leading-normal">$4.99/dozen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex gap-2 border-t border-[#ededed] bg-neutral-50 px-4 pb-3 pt-2">
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#141414]" href="#">
+            <div class="text-[#141414] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#141414] text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-neutral-500" href="#">
+            <div class="text-neutral-500 flex h-8 items-center justify-center" data-icon="ShoppingCart" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-neutral-500 text-xs font-medium leading-normal tracking-[0.015em]">Cart</p>
+          </a>
+        </div>
+        <div class="h-5 bg-neutral-50"></div>
+      </div>
+    </div>
+  </body>
+</html>
