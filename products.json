@@ -1,0 +1,92 @@
+[
+    {
+        "id": "prod001",
+        "name": "Whole Milk",
+        "make": "Amul",
+        "description": "Pasteurized full cream milk",
+        "category": "Dairy",
+        "price": "$3.49/gal",
+        "imageUrl": "https://images.unsplash.com/photo-1550583724-b2692b85b190?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=300&q=60"
+    },
+    {
+        "id": "prod002",
+        "name": "Brown Bread",
+        "make": "Britannia",
+        "description": "Whole wheat bread slices",
+        "category": "Bakery",
+        "price": "$2.00/loaf",
+        "imageUrl": "https://images.unsplash.com/photo-1580955836023-7c95105bs4e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnJlYWQlMjBsb2FmfGVufDB8fDB8fHww&auto=format&fit=crop&w=300&q=60"
+    },
+    {
+        "id": "prod003",
+        "name": "Eggs",
+        "make": "Local Farm",
+        "description": "Pack of 12 farm fresh eggs",
+        "category": "Dairy & Poultry",
+        "price": "$4.99/dozen",
+        "imageUrl": "https://images.unsplash.com/photo-1587486913049-53c838199694?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWdnc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=300&q=60"
+    },
+    {
+        "id": "prod004",
+        "name": "Basmati Rice",
+        "make": "India Gate",
+        "description": "Premium long grain basmati rice 1kg",
+        "category": "Grains",
+        "price": "$10.00/kg",
+        "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmljZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=300&q=60"
+    },
+    {
+        "id": "prod005",
+        "name": "Green Tea",
+        "make": "Lipton",
+        "description": "Pure and light green tea bags, 25 count",
+        "category": "Beverages",
+        "price": "$5.50/box",
+        "imageUrl": "https://images.unsplash.com/photo-1627435601361-ec25f3c8d075?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3JlZW4lMjB0ZWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=300&q=60"
+    },
+    {
+        "id": "prod006",
+        "name": "Olive Oil",
+        "make": "Figaro",
+        "description": "Extra virgin olive oil 500ml",
+        "category": "Oils",
+        "price": "$8.00/bottle",
+        "imageUrl": "https://images.unsplash.com/photo-1600150806193-cf8402974893?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b2xpdmUlMjBvaWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=300&q=60"
+    },
+    {
+        "id": "prod007",
+        "name": "Almonds",
+        "make": "Generic",
+        "description": "California almonds 250g pack",
+        "category": "Dry Fruits",
+        "price": "$6.00/pack",
+        "imageUrl": "https://images.unsplash.com/photo-1600689048930-d39240506975?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWxtb25kc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=300&q=60"
+    },
+    {
+        "id": "prod008",
+        "name": "Tomato Ketchup",
+        "make": "Maggi",
+        "description": "Rich tomato ketchup, 500g bottle",
+        "category": "Condiments",
+        "price": "$3.00/bottle",
+        "imageUrl": "https://images.unsplash.com/photo-1608061614013-b7565009e079?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2V0Y2h1cHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=300&q=60"
+    },
+    {
+        "id": "prod009",
+        "name": "Instant Coffee",
+        "make": "Nescafe",
+        "description": "Classic instant coffee powder 100g",
+        "category": "Beverages",
+        "price": "$7.00/jar",
+        "imageUrl": "https://images.unsplash.com/photo-1511920183303-510470597513?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&w=300&q=60"
+    },
+    {
+        "id": "prod010",
+        "name": "Digestive Biscuits",
+        "make": "McVities",
+        "description": "High fiber digestive biscuits",
+        "category": "Snacks",
+        "price": "$4.00/pack",
+        "imageUrl": "https://images.unsplash.com/photo-1590080919404-0985f0f15f0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmlzY3VpdHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=300&q=60"
+    }
+]

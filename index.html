@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocy PWA</title>
+
+    <!-- PWA Specific Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#141414"/> <!-- Updated to match design's dark elements -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Grocy">
+    <link rel="apple-touch-icon" href="icons/icon-152x152.png">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="style.css"> --> <!-- Removing old stylesheet -->
+
+    <!-- Fonts and Tailwind CSS from design -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col bg-neutral-50 justify-between group/design-root overflow-x-hidden">
+        <!-- Main Content Area (Page View) -->
+        <div id="page-view">
+            <!-- This div will be populated by either listing or cart view -->
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div>
+            <div class="flex gap-2 border-t border-[#ededed] bg-neutral-50 px-4 pb-3 pt-2">
+                <a id="nav-home" class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#141414]" href="#">
+                    <div class="text-[#141414] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-[#141414] text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+                </a>
+                <a id="nav-cart" class="just flex flex-1 flex-col items-center justify-end gap-1 text-neutral-500" href="#">
+                    <div class="text-neutral-500 flex h-8 items-center justify-center relative" data-icon="ShoppingCart" data-size="24px" data-weight="regular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"></path>
+                        </svg>
+                        <span id="cart-item-count-badge" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center" style="display: none;">0</span>
+                    </div>
+                    <p class="text-neutral-500 text-xs font-medium leading-normal tracking-[0.015em]">Cart</p>
+                </a>
+            </div>
+            <div class="h-5 bg-neutral-50"></div> <!-- Safe area padding for bottom -->
+        </div>
+    </div>
+
+    <!-- Templates for Pages -->
+    <template id="listing-page-template">
+        <div> <!-- Matches the outer div of Listing.html content -->
+            <div class="flex items-center justify-center bg-neutral-50 px-4 pt-4 pb-2"> <!-- Centered header content -->
+                <!-- Left spacer removed -->
+                <div class="flex items-center"> <!-- Center: Logo + Title -->
+                    <img src="icons/icon-72x72.png" alt="Grocy Logo" class="h-8 w-8 mr-2">
+                    <span class="text-[#141414] text-xl font-bold leading-tight tracking-[-0.015em]">Grocy</span>
+                </div>
+                <!-- Right cart icon button removed -->
+            </div>
+            <div class="px-4 py-3">
+                <label class="flex flex-col min-w-40 h-12 w-full">
+                    <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                        <div class="text-neutral-500 flex border-none bg-[#ededed] items-center justify-center pl-4 rounded-l-lg border-r-0" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                            </svg>
+                        </div>
+                        <input id="search-bar" placeholder="Search for products" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#ededed] focus:border-none h-full placeholder:text-neutral-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" value="" />
+                    </div>
+                </label>
+            </div>
+            <h3 id="product-list-title" class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Recommended</h3>
+            <div id="product-grid" class="flex flex-col p-1"> <!-- Changed to flex column and reduced padding -->
+                <!-- Product items will be injected here by script.js -->
+                <!-- Example Product Item Structure (for script.js reference)
+                <div class="flex items-center gap-3 p-3 border-b border-gray-200 product-item hover:bg-gray-50">
+                    <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" style='background-image: url("...");'></div>
+                    <div>
+                        <p class="text-[#141414] text-base font-medium leading-normal product-name">Fresh Apples</p>
+                        <p class="text-neutral-500 text-sm font-normal leading-normal product-price">$2.99/lb</p>
+                    </div>
+                    <button class="add-to-cart-button mt-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">Add to Cart</button>
+                </div>
+                -->
+            </div>
+             <div id="no-products-message" class="p-4 text-center text-neutral-500" style="display: none;">
+                No products found.
+            </div>
+        </div>
+    </template>
+
+    <template id="cart-page-template">
+        <div> <!-- Matches the outer div of Share.html content -->
+            <div class="flex items-center bg-neutral-50 p-4 pb-2 justify-between">
+                <button id="back-to-listing-button" class="text-[#141414] flex size-12 shrink-0 items-center justify-start" data-icon="ArrowLeft" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+                    </svg>
+                </button>
+                <div class="flex-1 flex flex-col items-center justify-center"> <!-- Centering container for logo and title -->
+                    <div class="flex items-center">
+                        <img src="icons/icon-72x72.png" alt="Grocy Logo" class="h-7 w-7 mr-2"> <!-- Logo -->
+                        <span class="text-[#141414] text-xl font-bold leading-tight tracking-[-0.015em]">Grocy</span>
+                    </div>
+                    <h2 class="text-neutral-600 text-sm font-medium leading-tight tracking-[-0.01em] mt-0.5">Your Order</h2>
+                </div>
+                <div class="w-12 shrink-0"></div> <!-- Spacer to balance the back button visually -->
+            </div>
+            <h3 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Items</h3>
+            <div id="cart-items-container" class="divide-y divide-gray-200">
+                <!-- Cart items will be injected here by script.js -->
+                <!-- Example Cart Item Structure (for script.js reference)
+                <div class="flex items-center gap-4 bg-neutral-50 px-4 min-h-[72px] py-3 cart-item" data-product-id="prod001">
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14 product-image" style='background-image: url("...");'></div>
+                    <div class="flex-grow flex flex-col justify-center">
+                        <p class="text-[#141414] text-base font-medium leading-normal line-clamp-1 product-name">Apples</p>
+                        <p class="text-neutral-500 text-sm font-normal leading-normal line-clamp-2 product-price-info">$2.99/lb</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button class="quantity-change text-lg font-bold p-1" data-change="-1">-</button>
+                        <span class="product-quantity text-base">1</span>
+                        <button class="quantity-change text-lg font-bold p-1" data-change="1">+</button>
+                    </div>
+                    <button class="remove-item text-red-500 hover:text-red-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"></path></svg>
+                    </button>
+                </div>
+                -->
+            </div>
+            <div id="empty-cart-message" class="p-4 text-center text-neutral-500" style="display: none;">
+                Your cart is empty. Add some items from the home page!
+            </div>
+
+            <!-- This div is for the action button, similar to Share.html footer -->
+            <div class="sticky bottom-0 left-0 right-0 bg-neutral-50 border-t border-[#ededed] pb-[calc(env(safe-area-inset-bottom,0px)+0.75rem)] pt-3 px-4">
+                 <button id="whatsapp-button" class="flex min-w-[84px] w-full max-w-[480px] mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-[#25D366] hover:bg-[#1EBE57] text-neutral-50 gap-2 pl-5 text-base font-bold leading-normal tracking-[0.015em]">
+                    <div class="text-neutral-50" data-icon="WhatsappLogo" data-size="24px" data-weight="regular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"></path>
+                        </svg>
+                    </div>
+                    <span class="truncate">Share via WhatsApp</span>
+                </button>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
