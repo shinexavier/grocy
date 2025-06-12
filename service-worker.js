@@ -1,20 +1,20 @@
-const CACHE_NAME = 'grocyorder-cache-v2'; // Incremented cache version
+const CACHE_NAME = 'grocyorder-cache-v3'; // Incremented cache version for path changes
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/style.css', // Though empty, it's linked, so cache it
-    '/script.js',
-    '/products.json',
-    '/manifest.json',
-    'icons/favicon.ico',
-    'icons/icon-72x72.png',
-    'icons/icon-96x96.png',
-    'icons/icon-128x128.png',
-    'icons/icon-144x144.png',
-    'icons/icon-152x152.png',
-    'icons/icon-192x192.png',
-    'icons/icon-384x384.png',
-    'icons/icon-512x512.png'
+    './', // Represents the root of the PWA in its subdirectory
+    './index.html',
+    './style.css', // Though empty, it's linked, so cache it
+    './script.js',
+    './products.json',
+    './manifest.json',
+    './icons/favicon.ico', // Made all paths explicitly relative
+    './icons/icon-72x72.png',
+    './icons/icon-96x96.png',
+    './icons/icon-128x128.png',
+    './icons/icon-144x144.png',
+    './icons/icon-152x152.png',
+    './icons/icon-192x192.png',
+    './icons/icon-384x384.png',
+    './icons/icon-512x512.png'
     // whatsapp-icon.png is not cached by default as it's not part of the core PWA shell/manifest.
 ];
 
