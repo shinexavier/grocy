@@ -162,15 +162,15 @@ document.addEventListener('DOMContentLoaded', () => {
             itemContainer.className = 'flex items-center gap-3 p-3 border-b border-gray-200 product-item hover:bg-gray-50'; // List item style
             itemContainer.dataset.productId = product.id;
 
-            // Image Thumbnail
-            const imageDiv = document.createElement('div');
-            imageDiv.className = 'w-16 h-16 bg-center bg-no-repeat bg-cover rounded-md bg-gray-100 shrink-0'; // Fixed size thumbnail
-            imageDiv.style.backgroundImage = `url("${product.imageUrl || 'icons/icon-72x72.png'}")`; // Smaller fallback
-            if (!product.imageUrl) {
-                imageDiv.style.backgroundSize = 'contain';
-            } else {
-                imageDiv.style.backgroundSize = 'cover';
-            }
+            // Image Thumbnail - HIDDEN
+            // const imageDiv = document.createElement('div');
+            // imageDiv.className = 'w-16 h-16 bg-center bg-no-repeat bg-cover rounded-md bg-gray-100 shrink-0'; // Fixed size thumbnail
+            // imageDiv.style.backgroundImage = `url("${product.imageUrl || 'icons/icon-72x72.png'}")`; // Smaller fallback
+            // if (!product.imageUrl) {
+            //     imageDiv.style.backgroundSize = 'contain';
+            // } else {
+            //     imageDiv.style.backgroundSize = 'cover';
+            // }
 
             // Info Div (Name, Price, Variants) - takes remaining space
             const infoDiv = document.createElement('div');
@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 addProductToCart(product, selectedVariant);
             });
 
-            itemContainer.appendChild(imageDiv);
+            // itemContainer.appendChild(imageDiv);
             itemContainer.appendChild(infoDiv);
             itemContainer.appendChild(addButton);
             gridElement.appendChild(itemContainer);
@@ -286,9 +286,9 @@ document.addEventListener('DOMContentLoaded', () => {
             itemDiv.className = 'flex items-center gap-4 bg-neutral-50 px-4 min-h-[72px] py-3 cart-item border-b border-gray-100';
             itemDiv.dataset.cartId = item.cartId;
 
-            const imgDiv = document.createElement('div');
-            imgDiv.className = 'bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14 product-image';
-            imgDiv.style.backgroundImage = `url("${item.imageUrl || 'icons/icon-192x192.png'}")`;
+            // const imgDiv = document.createElement('div');
+            // imgDiv.className = 'bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14 product-image';
+            // imgDiv.style.backgroundImage = `url("${item.imageUrl || 'icons/icon-192x192.png'}")`;
 
             const descDiv = document.createElement('div');
             descDiv.className = 'flex-grow flex flex-col justify-center';
@@ -330,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
             plusBtn.addEventListener('click', handleQuantityChange);
             removeBtn.addEventListener('click', handleRemoveItem);
 
-            itemDiv.appendChild(imgDiv);
+            // itemDiv.appendChild(imgDiv);
             itemDiv.appendChild(descDiv);
             itemDiv.appendChild(controlsDiv);
             itemDiv.appendChild(removeBtn);
