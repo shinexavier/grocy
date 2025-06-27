@@ -30,6 +30,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Styling primarily handled by Tailwind CSS; `style.css` cleared.
 - App name updated to "Grocy" across relevant files.
 - Service worker cache versioning implemented.
+- Updated UI to a new, cleaner design based on user-provided mockups.
+- Implemented a new color scheme (`#f8fcfa`, `#0c1c17`, `#46a080`) and fonts (`Plus Jakarta Sans`, `Noto Sans`).
+- Redesigned product cards on the listing page.
+- Redesigned the header and navigation components.
+- Hid product images on the cart page for a cleaner look.
+- Replaced the share icon with the classic WhatsApp icon on the share button.
+- Added a separator line below the search bar on the cart page for UI consistency.
 
 ### Fixed
 - CORS errors when running locally by recommending an HTTP server.
@@ -37,6 +44,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Alignment issues with header elements.
 - JavaScript errors related to removed UI elements.
 - Addressed "whitespace" issue for missing product images by adding background and adjusting `background-size` for fallback icons.
+- Cart page not rendering due to a JavaScript error.
 
 ### Removed
 - Redundant cart icon from the header of the product listing page.
