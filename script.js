@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentPage = 1;
     const itemsPerPage = 8; // Number of items to display per page
     let currentActiveProductList = []; // Holds the full list being paginated (either all products or filtered results)
+    let currentCategory = 'All'; // To track the currently selected category
     
     // --- 1. LOAD PRODUCT CATALOG (CALLED ONCE ON STARTUP) ---
     async function loadProductCatalogAndUpdateView() {
@@ -104,35 +105,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const productListTitle = pageView.querySelector('#product-list-title');
         const prevPageButton = pageView.querySelector('#prev-page-button');
         const nextPageButton = pageView.querySelector('#next-page-button');
-
-        if (!searchBar || !productListTitle || !prevPageButton || !nextPageButton) {
-            console.error("Critical listing page elements (search, title, pagination buttons) not found!");
+        const categoryFiltersContainer = pageView.querySelector('#category-filters');
+    
+        if (!searchBar || !productListTitle || !prevPageButton || !nextPageButton || !categoryFiltersContainer) {
+            console.error("Critical listing page elements (search, title, pagination buttons, category filters) not found!");
             pageView.innerHTML = "<p class='text-red-500 p-4 text-center'>Error: UI components failed to load. Please refresh.</p>";
             return;
         }
         
+        renderCategoryFilters(categoryFiltersContainer);
+        
         searchBar.addEventListener('input', (e) => {
             const searchTerm = e.target.value.toLowerCase().trim();
             currentPage = 1; // Reset to first page on new search
-
-            if (fetchErrored) {
-                productListTitle.textContent = 'Error';
-                currentActiveProductList = [];
-            } else if (searchTerm.length === 0) {
-                productListTitle.textContent = 'Recommended';
-                currentActiveProductList = productCatalog;
-            } else if (searchTerm.length < 2) {
-                productListTitle.textContent = 'Search Results'; // Or 'Type more to search'
-                currentActiveProductList = []; // Clear list if search term too short, effectively showing no results via pagination
-            } else {
-                productListTitle.textContent = 'Search Results';
-                currentActiveProductList = productCatalog.filter(product =>
-                    product.name.toLowerCase().includes(searchTerm) ||
-                    (product.make && product.make.toLowerCase().includes(searchTerm)) ||
-                    (product.description && product.description.toLowerCase().includes(searchTerm))
-                );
-            }
-            updateDisplayedProductsAndPagination();
+            filterAndDisplayProducts(searchTerm, currentCategory);
         });
 
         prevPageButton.addEventListener('click', () => {
@@ -153,20 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Initial display logic
         const currentSearchTerm = searchBar.value.toLowerCase().trim();
-        if (fetchErrored) {
-            productListTitle.textContent = 'Error';
-            currentActiveProductList = [];
-        } else if (currentSearchTerm.length >= 2) { // If there was a search term (e.g. navigating back)
-            productListTitle.textContent = 'Search Results';
-             currentActiveProductList = productCatalog.filter(product =>
-                product.name.toLowerCase().includes(currentSearchTerm) ||
-                (product.make && product.make.toLowerCase().includes(currentSearchTerm)) ||
-                (product.description && product.description.toLowerCase().includes(currentSearchTerm))
-            );
-        } else { // Default view (no search or short search term)
-            productListTitle.textContent = 'Recommended';
-            currentActiveProductList = productCatalog;
-        }
+        filterAndDisplayProducts(currentSearchTerm, currentCategory);
         // currentPage should be preserved if navigating back, otherwise default to 1.
         // For simplicity now, let's assume it might have been set by a previous view or defaults to 1.
         // A more robust solution might store/restore currentPage with search term.
@@ -199,17 +172,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 imageDiv.style.backgroundSize = 'cover';
             }
 
-            // Info Div (Name, Price) - takes remaining space
+            // Info Div (Name, Price, Variants) - takes remaining space
             const infoDiv = document.createElement('div');
             infoDiv.className = 'flex-grow min-w-0'; // min-w-0 for proper truncation
             const nameP = document.createElement('p');
             nameP.className = 'text-[#141414] text-base font-medium leading-normal product-name truncate';
-            nameP.textContent = product.name;
-            const priceP = document.createElement('p');
-            priceP.className = 'text-neutral-500 text-sm font-normal leading-normal product-price';
-            priceP.textContent = `₹${product.price || '?.??'}`;
+            if (product.name_ml) {
+                nameP.textContent = `${product.name_ml} (${product.name})`;
+            } else {
+                nameP.textContent = product.name;
+            }
             infoDiv.appendChild(nameP);
-            infoDiv.appendChild(priceP);
+
+            if (product.variants && product.variants.length > 0) {
+                const variantSelect = document.createElement('select');
+                variantSelect.className = 'mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md';
+                product.variants.forEach(variant => {
+                    const option = document.createElement('option');
+                    option.value = variant;
+                    option.textContent = variant;
+                    variantSelect.appendChild(option);
+                });
+                infoDiv.appendChild(variantSelect);
+            }
+
 
             // Add to Cart Button - aligned to the right
             const addButton = document.createElement('button');
@@ -225,7 +211,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
             addButton.addEventListener('click', (e) => {
                 e.stopPropagation(); // Prevent triggering click on itemContainer if needed
-                addProductToCart(product);
+                const selectedVariant = infoDiv.querySelector('select') ? infoDiv.querySelector('select').value : null;
+                addProductToCart(product, selectedVariant);
             });
 
             itemContainer.appendChild(imageDiv);
@@ -251,17 +238,42 @@ document.addEventListener('DOMContentLoaded', () => {
         const cartItemsContainer = pageView.querySelector('#cart-items-container');
         const emptyCartMessage = pageView.querySelector('#empty-cart-message');
         const whatsappButton = pageView.querySelector('#whatsapp-button');
+        const cartSearchBar = pageView.querySelector('#cart-search-bar');
+        const clearCartSearch = pageView.querySelector('#clear-cart-search');
 
         backButton.addEventListener('click', () => showListingPage(false)); // show all products or last search
         whatsappButton.addEventListener('click', handleWhatsappShare);
 
-        renderCartItems(cartItemsContainer, emptyCartMessage);
+        cartSearchBar.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            renderCartItems(cartItemsContainer, emptyCartMessage, searchTerm);
+            clearCartSearch.style.display = searchTerm ? 'block' : 'none';
+        });
+
+        clearCartSearch.addEventListener('click', () => {
+            cartSearchBar.value = '';
+            renderCartItems(cartItemsContainer, emptyCartMessage, '');
+            clearCartSearch.style.display = 'none';
+        });
+
+        renderCartItems(cartItemsContainer, emptyCartMessage, '');
         updateCartBadges();
     }
 
-    function renderCartItems(container, emptyMessageElement) {
+    function renderCartItems(container, emptyMessageElement, searchTerm = '') {
+        let filteredCart = shoppingCart;
+        if (searchTerm) {
+            filteredCart = shoppingCart.filter(item =>
+                item.name.toLowerCase().includes(searchTerm) ||
+                (item.name_ml && item.name_ml.toLowerCase().includes(searchTerm)) ||
+                (item.make && item.make.toLowerCase().includes(searchTerm)) ||
+                (item.description && item.description.toLowerCase().includes(searchTerm))
+            );
+        }
+
         container.innerHTML = '';
-        if (shoppingCart.length === 0) {
+        if (filteredCart.length === 0) {
+            emptyMessageElement.textContent = searchTerm ? 'No items match your search.' : 'Your cart is empty. Add some items from the home page!';
             emptyMessageElement.style.display = 'block';
             container.style.display = 'none'; // Hide container if empty
             return;
@@ -269,10 +281,10 @@ document.addEventListener('DOMContentLoaded', () => {
         emptyMessageElement.style.display = 'none';
         container.style.display = 'block'; // Show container
 
-        shoppingCart.forEach(item => {
+        filteredCart.forEach(item => {
             const itemDiv = document.createElement('div');
             itemDiv.className = 'flex items-center gap-4 bg-neutral-50 px-4 min-h-[72px] py-3 cart-item border-b border-gray-100';
-            itemDiv.dataset.productId = item.id;
+            itemDiv.dataset.cartId = item.cartId;
 
             const imgDiv = document.createElement('div');
             imgDiv.className = 'bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14 product-image';
@@ -282,13 +294,15 @@ document.addEventListener('DOMContentLoaded', () => {
             descDiv.className = 'flex-grow flex flex-col justify-center';
             const nameP = document.createElement('p');
             nameP.className = 'text-[#141414] text-base font-medium leading-normal line-clamp-1 product-name';
-            nameP.textContent = item.name;
-            const priceP = document.createElement('p');
-            priceP.className = 'text-neutral-500 text-sm font-normal leading-normal line-clamp-2 product-price-info';
-            priceP.textContent = `₹${item.price || '?.??'}`; // Could add 'per unit' if available
-
+            let nameText = item.name;
+            if (item.name_ml) {
+                nameText = `${item.name_ml} (${item.name})`;
+            }
+            if (item.variant) {
+                nameText += ` - ${item.variant}`;
+            }
+            nameP.textContent = nameText;
             descDiv.appendChild(nameP);
-            descDiv.appendChild(priceP);
 
             const controlsDiv = document.createElement('div');
             controlsDiv.className = 'flex items-center gap-2';
@@ -325,12 +339,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- 3. CART MANAGEMENT ---
-    function addProductToCart(product) {
-        const existingItem = shoppingCart.find(item => item.id === product.id);
+    function addProductToCart(product, variant) {
+        const cartId = variant ? `${product.id}-${variant}` : product.id;
+        const existingItem = shoppingCart.find(item => item.cartId === cartId);
+
         if (existingItem) {
             existingItem.quantity++;
         } else {
-            shoppingCart.push({ ...product, quantity: 1 });
+            shoppingCart.push({ ...product, quantity: 1, variant: variant, cartId: cartId });
         }
         updateCartBadges();
         // Optionally, provide feedback like "Item added to cart"
@@ -348,21 +364,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleQuantityChange(event) {
-        const productId = event.target.closest('.cart-item').dataset.productId;
+        const cartId = event.target.closest('.cart-item').dataset.cartId;
         const change = parseInt(event.target.dataset.change, 10);
-        const item = shoppingCart.find(p => p.id === productId);
+        const item = shoppingCart.find(p => p.cartId === cartId);
 
         if (item) {
             item.quantity += change;
             if (item.quantity <= 0) {
-                shoppingCart = shoppingCart.filter(p => p.id !== productId);
+                shoppingCart = shoppingCart.filter(p => p.cartId !== cartId);
             }
         }
         // Re-render cart items if on cart page. If on listing page, re-render to update "Added" buttons.
         if (currentView === 'cart') {
             const cartItemsContainer = pageView.querySelector('#cart-items-container');
             const emptyCartMessage = pageView.querySelector('#empty-cart-message');
-            renderCartItems(cartItemsContainer, emptyCartMessage);
+            const searchTerm = pageView.querySelector('#cart-search-bar').value.toLowerCase().trim();
+            renderCartItems(cartItemsContainer, emptyCartMessage, searchTerm);
         } else if (currentView === 'listing') {
             showListingPage(); // Re-render listing page if an item might have been removed or added
         }
@@ -370,13 +387,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleRemoveItem(event) {
-        const productId = event.target.closest('.cart-item').dataset.productId;
-        shoppingCart = shoppingCart.filter(p => p.id !== productId);
+        const cartId = event.target.closest('.cart-item').dataset.cartId;
+        shoppingCart = shoppingCart.filter(p => p.cartId !== cartId);
         // Re-render cart items if on cart page. If on listing page, re-render to update "Added" buttons.
         if (currentView === 'cart') {
             const cartItemsContainer = pageView.querySelector('#cart-items-container');
             const emptyCartMessage = pageView.querySelector('#empty-cart-message');
-            renderCartItems(cartItemsContainer, emptyCartMessage);
+            const searchTerm = pageView.querySelector('#cart-search-bar').value.toLowerCase().trim();
+            renderCartItems(cartItemsContainer, emptyCartMessage, searchTerm);
         } else if (currentView === 'listing') {
             showListingPage(); // Re-render listing page
         }
@@ -407,17 +425,97 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        let message = "Hello! I'd like to order the following items:\n\n";
-        shoppingCart.forEach(item => {
-            message += `- ${item.name} (Qty: ${item.quantity})\n`; // Updated format
+        let message = "🚀 Hello! I'd like to order the following items:\n\n";
+        shoppingCart.forEach((item, index) => {
+            let nameText = item.name;
+            if (item.name_ml) {
+                nameText = `${item.name_ml} (${item.name})`;
+            }
+            
+            let itemIdentifier = `${index + 1}. ${nameText}`;
+
+            if (item.variant) {
+                if (item.variant.toLowerCase() === '1 pc' || item.variant.toLowerCase() === '1 bunch') {
+                    itemIdentifier += ` - ${item.quantity} ${item.variant.toLowerCase() === '1 pc' ? 'pieces' : 'bunches'}`;
+                    message += `${itemIdentifier} ✅\n`;
+                } else {
+                    itemIdentifier += ` - ${item.variant}`;
+                    message += `${itemIdentifier} (Qty: ${item.quantity}) ✅\n`;
+                }
+            } else {
+                message += `${itemIdentifier} (Qty: ${item.quantity}) ✅\n`;
+            }
         });
-        message += "\nThank you!";
+        message += "\nThank you!\n\n---\n🛍️ Created with GROCY App";
+
+        console.log("Generated WhatsApp Message:\n", message);
 
         const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     }
 
-    // --- 5. PWA Service Worker Registration ---
+    // --- 5. CATEGORY FILTERING ---
+    function renderCategoryFilters(container) {
+        const categories = ['All', ...new Set(productCatalog.map(p => p.category).filter(Boolean))];
+        container.innerHTML = '';
+
+        categories.forEach(category => {
+            const button = document.createElement('button');
+            button.className = 'category-filter-button px-4 py-2 text-sm font-medium rounded-full';
+            button.textContent = category;
+            button.dataset.category = category;
+
+            if (category === currentCategory) {
+                button.classList.add('bg-[#141414]', 'text-white');
+            } else {
+                button.classList.add('bg-gray-200', 'text-gray-800');
+            }
+
+            button.addEventListener('click', () => {
+                currentCategory = category;
+                currentPage = 1;
+                const searchTerm = pageView.querySelector('#search-bar').value.toLowerCase().trim();
+                filterAndDisplayProducts(searchTerm, currentCategory);
+                // Re-render buttons to update active state
+                renderCategoryFilters(container);
+            });
+
+            container.appendChild(button);
+        });
+    }
+
+    function filterAndDisplayProducts(searchTerm, category) {
+        const productListTitle = pageView.querySelector('#product-list-title');
+
+        if (fetchErrored) {
+            productListTitle.textContent = 'Error';
+            currentActiveProductList = [];
+        } else {
+            let filteredProducts = productCatalog;
+
+            // Filter by category
+            if (category !== 'All') {
+                filteredProducts = filteredProducts.filter(product => product.category === category);
+            }
+
+            // Filter by search term
+            if (searchTerm.length >= 2) {
+                productListTitle.textContent = 'Search Results';
+                filteredProducts = filteredProducts.filter(product =>
+                    product.name.toLowerCase().includes(searchTerm) ||
+                    (product.name_ml && product.name_ml.toLowerCase().includes(searchTerm)) ||
+                    (product.make && product.make.toLowerCase().includes(searchTerm)) ||
+                    (product.description && product.description.toLowerCase().includes(searchTerm))
+                );
+            } else {
+                 productListTitle.textContent = category === 'All' ? 'Recommended' : category;
+            }
+            currentActiveProductList = filteredProducts;
+        }
+        updateDisplayedProductsAndPagination();
+    }
+
+    // --- 6. PWA Service Worker Registration ---
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
             navigator.serviceWorker.register('/service-worker.js')
