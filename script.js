@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadProductCatalogAndUpdateView() {
         fetchErrored = false; // Reset error state
         try {
-            const response = await fetch('products.json');
+            const response = await fetch('thanal_products.json');
             if (!response.ok) {
                 fetchErrored = true;
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -519,4 +519,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentView !== 'cart') showCartPage();
     });
     // updateCartBadges() is called at the end of showListingPage/showCartPage
+    // Admin access
+    const manageCatalogLink = document.getElementById('manage-catalog');
+    if (manageCatalogLink) {
+        manageCatalogLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            const token = prompt('Enter your secure token:');
+            if (token === 'thanal-admin-2024') { // Hardcoded token
+                window.location.href = 'admin.html';
+            } else if (token) {
+                alert('Invalid token.');
+            }
+        });
+    }
 });

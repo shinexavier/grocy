@@ -241,7 +241,9 @@ const processFile = (filePath) => {
         description: productInfo.name,
         variants: variants,
         imageUrl: 'images/placeholder.jpg',
-        notes: productInfo.notes
+        notes: productInfo.notes,
+        enabled: true,
+        tags: []
       });
     }
   }
