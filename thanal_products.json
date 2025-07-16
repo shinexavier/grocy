@@ -1,0 +1,3350 @@
+[
+  {
+    "id": "1",
+    "name": "Beans",
+    "name_ml": "ബീൻസ്",
+    "price": 110,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Beans",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "2",
+    "name": "Bigonion",
+    "name_ml": "സവാള",
+    "price": 58,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Bigonion",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "3",
+    "name": "Small Onion",
+    "name_ml": "",
+    "price": 75,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Small Onion",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "4",
+    "name": "Bottle Gourd",
+    "name_ml": "ചുരയ്ക്ക",
+    "price": 40,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Bottle Gourd",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "5",
+    "name": "Beetroot",
+    "name_ml": "ബീറ്റ്റൂട്ട്",
+    "price": 72,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Beetroot",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "6",
+    "name": "Cabbage",
+    "name_ml": "ക്യാബേജ്",
+    "price": 37,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Cabbage",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "7",
+    "name": "Cut Vege Sambar",
+    "name_ml": "",
+    "price": 61,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Cut Vege Sambar",
+    "variants": [
+      "350g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "8",
+    "name": "Colocasia",
+    "name_ml": "സാമ്പാർ ചേമ്പ്",
+    "price": 55,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Colocasia",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "9",
+    "name": "Capsicum",
+    "name_ml": "ക്യാപ്സികം",
+    "price": 80,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Capsicum",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "10",
+    "name": "Clester Beans",
+    "name_ml": "അമര",
+    "price": 50,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Clester Beans",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "11",
+    "name": "Coconut",
+    "name_ml": "തേങ്ങ",
+    "price": 59,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Coconut",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "12",
+    "name": "Carrot",
+    "name_ml": "ക്യാരറ്റ്",
+    "price": 65,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Carrot",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "13",
+    "name": "Ginger",
+    "name_ml": "ഇഞ്ചി",
+    "price": 163,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Ginger",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "14",
+    "name": "Zuchini",
+    "name_ml": "",
+    "price": 75,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Zuchini",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "15",
+    "name": "Chena",
+    "name_ml": "",
+    "price": 70,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Chena",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "16",
+    "name": "Gooseberry",
+    "name_ml": "നെല്ലിക്ക",
+    "price": 68,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Gooseberry",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "17",
+    "name": "Kathiri",
+    "name_ml": "",
+    "price": 54,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Kathiri",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "18",
+    "name": "Grated Coconut",
+    "name_ml": "",
+    "price": 90,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Grated Coconut",
+    "variants": [
+      "250g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "19",
+    "name": "Green Chilly",
+    "name_ml": "പച്ച മുളക്",
+    "price": 75,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Green Chilly",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "20",
+    "name": "Lady\"s Finger",
+    "name_ml": "വെണ്ടയ്ക്ക",
+    "price": 59,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Lady\"s Finger",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "21",
+    "name": "Peechinga",
+    "name_ml": "",
+    "price": 49,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Peechinga",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "22",
+    "name": "Padavalam",
+    "name_ml": "",
+    "price": 50,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Padavalam",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "23",
+    "name": "Pavakka",
+    "name_ml": "",
+    "price": 67.5,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Pavakka",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "24",
+    "name": "Chow Chow",
+    "name_ml": "",
+    "price": 45,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Chow Chow",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "25",
+    "name": "Lemon",
+    "name_ml": "നാരങ്ങ",
+    "price": 130,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Lemon",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "26",
+    "name": "Potato",
+    "name_ml": "ഉരുളങ്കിഴങ്ങ്",
+    "price": 50,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Potato",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "27",
+    "name": "Pumpkin",
+    "name_ml": "മത്തൻ",
+    "price": 40,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Pumpkin",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "28",
+    "name": "Salad Cucumber",
+    "name_ml": "സാലഡ് വെള്ളരി",
+    "price": 50,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Salad Cucumber",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "29",
+    "name": "Sweet Potato",
+    "name_ml": "മധുരകിഴങ്ങ്",
+    "price": 50,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Sweet Potato",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "30",
+    "name": "Tomato",
+    "name_ml": "തക്കാളി",
+    "price": 30,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Tomato",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "31",
+    "name": "Vellari",
+    "name_ml": "വെള്ളരി",
+    "price": 60,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Vellari",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "32",
+    "name": "Kumbalam",
+    "name_ml": "",
+    "price": 39.5,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Kumbalam",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "33",
+    "name": "Water Melon",
+    "name_ml": "",
+    "price": 45,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Water Melon",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "34",
+    "name": "Papaya",
+    "name_ml": "",
+    "price": 36,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Papaya",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "35",
+    "name": "Pomogranate",
+    "name_ml": "",
+    "price": 180,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Pomogranate",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "36",
+    "name": "Dragon Fruit",
+    "name_ml": "",
+    "price": 175,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Dragon Fruit",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "37",
+    "name": "Pear",
+    "name_ml": "പിയർ",
+    "price": 150,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Pear",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "38",
+    "name": "Mango Langda",
+    "name_ml": "",
+    "price": 125,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Mango Langda",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "39",
+    "name": "Mango Moovandan",
+    "name_ml": "",
+    "price": 60,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Mango Moovandan",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "40",
+    "name": "Musambi",
+    "name_ml": "",
+    "price": 75,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Musambi",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "41",
+    "name": "Alphonsa Mango",
+    "name_ml": "",
+    "price": 120,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Alphonsa Mango",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "42",
+    "name": "Mallika Mango",
+    "name_ml": "",
+    "price": 135,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Mallika Mango",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "43",
+    "name": "Uma Boiled",
+    "name_ml": "",
+    "price": 95,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Uma Boiled",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "44",
+    "name": "Uma Raw",
+    "name_ml": "",
+    "price": 93,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Uma Raw",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "45",
+    "name": "Jyothi Boiled",
+    "name_ml": "",
+    "price": 95,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Jyothi Boiled",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "46",
+    "name": "Jyothi Raw",
+    "name_ml": "",
+    "price": 93,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Jyothi Raw",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "47",
+    "name": "Nadanchamba-",
+    "name_ml": "",
+    "price": 82,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Nadanchamba-",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "48",
+    "name": "Basmati Rice",
+    "name_ml": "",
+    "price": 210,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Basmati Rice",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "49",
+    "name": "Thuyamalli Boiled Rice White",
+    "name_ml": "",
+    "price": 115,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Thuyamalli Boiled Rice White",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "50",
+    "name": "Kattuyanam Boiled Rice",
+    "name_ml": "",
+    "price": 105,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Kattuyanam Boiled Rice",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "51",
+    "name": "Mullankayama Rice",
+    "name_ml": "",
+    "price": 230,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Mullankayama Rice",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "52",
+    "name": "Sonamasoori Raw Rice",
+    "name_ml": "",
+    "price": 134,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Sonamasoori Raw Rice",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "53",
+    "name": "Kichali Chamba Raw Rice",
+    "name_ml": "",
+    "price": 130,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Kichali Chamba Raw Rice",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "54",
+    "name": "Thuyamalli Raw",
+    "name_ml": "",
+    "price": 130,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Thuyamalli Raw",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "55",
+    "name": "Vadirose",
+    "name_ml": "",
+    "price": 91,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Vadirose",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "56",
+    "name": "Spl Rice Puttupodi",
+    "name_ml": "",
+    "price": 180,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Spl Rice Puttupodi",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "57",
+    "name": "Spl Rice Flour Idiyappam",
+    "name_ml": "",
+    "price": 180,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Spl Rice Flour Idiyappam",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "58",
+    "name": "Red Rice Idiyappam",
+    "name_ml": "",
+    "price": 130,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Red Rice Idiyappam",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "59",
+    "name": "Red Rice Puttupodi",
+    "name_ml": "",
+    "price": 130,
+    "category": "Rice and Rice products",
+    "make": "Generic",
+    "description": "Red Rice Puttupodi",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "60",
+    "name": "Wheat Flour",
+    "name_ml": "",
+    "price": 95,
+    "category": "Wheat and Wheat Products",
+    "make": "Generic",
+    "description": "Wheat Flour",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "61",
+    "name": "Wheat Deliya",
+    "name_ml": "",
+    "price": 90,
+    "category": "Wheat and Wheat Products",
+    "make": "Generic",
+    "description": "Wheat Deliya",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "62",
+    "name": "Jaggery",
+    "name_ml": "",
+    "price": 85,
+    "category": "Sweeteners",
+    "make": "Generic",
+    "description": "Jaggery",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "63",
+    "name": "Panamkalkand",
+    "name_ml": "",
+    "price": 130,
+    "category": "Sweeteners",
+    "make": "Generic",
+    "description": "Panamkalkand",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "64",
+    "name": "Karuppetti Powder",
+    "name_ml": "",
+    "price": 175,
+    "category": "Sweeteners",
+    "make": "Generic",
+    "description": "Karuppetti Powder",
+    "variants": [
+      "250g",
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "65",
+    "name": "Chukku Karippetti",
+    "name_ml": "",
+    "price": 131,
+    "category": "Sweeteners",
+    "make": "Generic",
+    "description": "Chukku Karippetti",
+    "variants": [
+      "200g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "66",
+    "name": "Wildhoney",
+    "name_ml": "",
+    "price": 350,
+    "category": "Sweeteners",
+    "make": "Generic",
+    "description": "Wildhoney",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "67",
+    "name": "An Jaggery",
+    "name_ml": "",
+    "price": 70,
+    "category": "Sweeteners",
+    "make": "Generic",
+    "description": "An Jaggery",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "68",
+    "name": "Khandasari Sugar",
+    "name_ml": "",
+    "price": 66,
+    "category": "Sweeteners",
+    "make": "Generic",
+    "description": "Khandasari Sugar",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "69",
+    "name": "Sugar White",
+    "name_ml": "",
+    "price": 125,
+    "category": "Sweeteners",
+    "make": "Generic",
+    "description": "Sugar White",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "70",
+    "name": "Chilly Whole",
+    "name_ml": "",
+    "price": 128,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Chilly Whole",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "71",
+    "name": "Kashmiri Chilly Powder.",
+    "name_ml": "",
+    "price": 168,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Kashmiri Chilly Powder.",
+    "variants": [
+      "200g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "72",
+    "name": "Chilly Powder-m",
+    "name_ml": "",
+    "price": 134,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Chilly Powder-m",
+    "variants": [
+      "200g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "73",
+    "name": "Chilly Periyan Pdr",
+    "name_ml": "",
+    "price": 220,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Chilly Periyan Pdr",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "74",
+    "name": "Coriander Powder",
+    "name_ml": "",
+    "price": 109,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Coriander Powder",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "75",
+    "name": "Coriander Whole",
+    "name_ml": "",
+    "price": 146,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Coriander Whole",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "76",
+    "name": "Cinnamon",
+    "name_ml": "",
+    "price": 90,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Cinnamon",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "77",
+    "name": "Cardamon",
+    "name_ml": "",
+    "price": 70,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Cardamon",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "78",
+    "name": "Pepper",
+    "name_ml": "",
+    "price": 103,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Pepper",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "79",
+    "name": "Clove",
+    "name_ml": "",
+    "price": 99,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Clove",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "80",
+    "name": "Vanasree Pepper",
+    "name_ml": "",
+    "price": 225,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Vanasree Pepper",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "81",
+    "name": "Dry Ginger Powder",
+    "name_ml": "",
+    "price": 65,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Dry Ginger Powder",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "82",
+    "name": "Cinnamon Powder",
+    "name_ml": "",
+    "price": 108,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Cinnamon Powder",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "83",
+    "name": "Moringa Jatropha Rasam Powder",
+    "name_ml": "",
+    "price": 120,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Moringa Jatropha Rasam Powder",
+    "variants": [
+      "100g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "84",
+    "name": "Wayanadan Turmeric Powder",
+    "name_ml": "",
+    "price": 75,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Wayanadan Turmeric Powder",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "85",
+    "name": "Paneer Masala",
+    "name_ml": "",
+    "price": 50,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Paneer Masala",
+    "variants": [
+      "100g",
+      "50g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "86",
+    "name": "Mutton Masala",
+    "name_ml": "",
+    "price": 55,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Mutton Masala",
+    "variants": [
+      "100g",
+      "50g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "87",
+    "name": "Channa Masala",
+    "name_ml": "",
+    "price": 60,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Channa Masala",
+    "variants": [
+      "100g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "88",
+    "name": "Fish Curry Masala",
+    "name_ml": "",
+    "price": 55,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Fish Curry Masala",
+    "variants": [
+      "100g",
+      "50g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "89",
+    "name": "Chicken Curry Masala",
+    "name_ml": "",
+    "price": 55,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Chicken Curry Masala",
+    "variants": [
+      "100g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "90",
+    "name": "Sambar Masala",
+    "name_ml": "",
+    "price": 130,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Sambar Masala",
+    "variants": [
+      "100g",
+      "50g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "91",
+    "name": "Vanpayar",
+    "name_ml": "",
+    "price": 116,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Vanpayar",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "92",
+    "name": "Toor Dal",
+    "name_ml": "",
+    "price": 230,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Toor Dal",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "93",
+    "name": "Horse Gram",
+    "name_ml": "",
+    "price": 80,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Horse Gram",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "94",
+    "name": "Moong Dal",
+    "name_ml": "",
+    "price": 120,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Moong Dal",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "95",
+    "name": "Urd Whole",
+    "name_ml": "",
+    "price": 120,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Urd Whole",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "96",
+    "name": "Urd Split",
+    "name_ml": "",
+    "price": 133,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Urd Split",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "97",
+    "name": "Rajma Red",
+    "name_ml": "",
+    "price": 116,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Rajma Red",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "98",
+    "name": "Kadala Parippu",
+    "name_ml": "",
+    "price": 98,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Kadala Parippu",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "99",
+    "name": "Chawali",
+    "name_ml": "",
+    "price": 89,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Chawali",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "100",
+    "name": "Green Peas",
+    "name_ml": "",
+    "price": 185,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Green Peas",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "101",
+    "name": "Uluva",
+    "name_ml": "",
+    "price": 30,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Uluva",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "102",
+    "name": "Cumin",
+    "name_ml": "",
+    "price": 80,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Cumin",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "103",
+    "name": "Peanut",
+    "name_ml": "",
+    "price": 122,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Peanut",
+    "variants": [
+      "500g",
+      "250g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "104",
+    "name": "Kalonji",
+    "name_ml": "",
+    "price": 62,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Kalonji",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "105",
+    "name": "Fennel Seeds",
+    "name_ml": "",
+    "price": 58,
+    "category": "Pulses and Lentils",
+    "make": "Generic",
+    "description": "Fennel Seeds",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "106",
+    "name": "Flax Seed",
+    "name_ml": "",
+    "price": 118,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Flax Seed",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "107",
+    "name": "Ragi Whole",
+    "name_ml": "",
+    "price": 55,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Ragi Whole",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "108",
+    "name": "Ragi Powder",
+    "name_ml": "",
+    "price": 70,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Ragi Powder",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "109",
+    "name": "Sprouted Ragi Powder",
+    "name_ml": "",
+    "price": 80,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Sprouted Ragi Powder",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "110",
+    "name": "Arrowroot Powder",
+    "name_ml": "",
+    "price": 175,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Arrowroot Powder",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "111",
+    "name": "Pearl Millet",
+    "name_ml": "",
+    "price": 75,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Pearl Millet",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "112",
+    "name": "Thina Rice",
+    "name_ml": "",
+    "price": 85,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Thina Rice",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "113",
+    "name": "Proso Millet",
+    "name_ml": "",
+    "price": 108,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Proso Millet",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "114",
+    "name": "Kodomillet",
+    "name_ml": "",
+    "price": 95,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Kodomillet",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "115",
+    "name": "Pumpkin Seed",
+    "name_ml": "",
+    "price": 200,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Pumpkin Seed",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "116",
+    "name": "Sunflower Seed",
+    "name_ml": "",
+    "price": 100,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Sunflower Seed",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "117",
+    "name": "Chia Seed",
+    "name_ml": "",
+    "price": 150,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Chia Seed",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "118",
+    "name": "Blue Berry",
+    "name_ml": "",
+    "price": 500,
+    "category": "Dry Fruits and Nuts",
+    "make": "Generic",
+    "description": "Blue Berry",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "119",
+    "name": "Fig",
+    "name_ml": "",
+    "price": 206,
+    "category": "Dry Fruits and Nuts",
+    "make": "Generic",
+    "description": "Fig",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "120",
+    "name": "Walnut",
+    "name_ml": "",
+    "price": 285,
+    "category": "Dry Fruits and Nuts",
+    "make": "Generic",
+    "description": "Walnut",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "121",
+    "name": "Plumberry",
+    "name_ml": "",
+    "price": 160,
+    "category": "Dry Fruits and Nuts",
+    "make": "Generic",
+    "description": "Plumberry",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "122",
+    "name": "Pista",
+    "name_ml": "",
+    "price": 200,
+    "category": "Dry Fruits and Nuts",
+    "make": "Generic",
+    "description": "Pista",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "123",
+    "name": "Cherry Berry",
+    "name_ml": "",
+    "price": 183,
+    "category": "Dry Fruits and Nuts",
+    "make": "Generic",
+    "description": "Cherry Berry",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "124",
+    "name": "Badam",
+    "name_ml": "",
+    "price": 208,
+    "category": "Dry Fruits and Nuts",
+    "make": "Generic",
+    "description": "Badam",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "125",
+    "name": "Raisins Yellow",
+    "name_ml": "",
+    "price": 90,
+    "category": "Dry Fruits and Nuts",
+    "make": "Generic",
+    "description": "Raisins Yellow",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "126",
+    "name": "Sunflower Oil",
+    "name_ml": "",
+    "price": 214,
+    "category": "Oils",
+    "make": "Generic",
+    "description": "Sunflower Oil",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "127",
+    "name": "Virgin Coconut Oil",
+    "name_ml": "",
+    "price": 217,
+    "category": "Oils",
+    "make": "Generic",
+    "description": "Virgin Coconut Oil",
+    "variants": [
+      "250ml",
+      "500ml"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "128",
+    "name": "Sesame Oil",
+    "name_ml": "",
+    "price": 535,
+    "category": "Oils",
+    "make": "Generic",
+    "description": "Sesame Oil",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "129",
+    "name": "Ghee",
+    "name_ml": "",
+    "price": 350,
+    "category": "Oils",
+    "make": "Generic",
+    "description": "Ghee",
+    "variants": [
+      "200g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "130",
+    "name": "Olive Oil",
+    "name_ml": "",
+    "price": 1100,
+    "category": "Oils",
+    "make": "Generic",
+    "description": "Olive Oil",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "131",
+    "name": "Aval White Thin",
+    "name_ml": "",
+    "price": 85,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "Aval White Thin",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "132",
+    "name": "Aval White Thick",
+    "name_ml": "",
+    "price": 85,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "Aval White Thick",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "133",
+    "name": "Aval Jyothi",
+    "name_ml": "",
+    "price": 75,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "Aval Jyothi",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "134",
+    "name": "Chakli",
+    "name_ml": "",
+    "price": 90,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "Chakli",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "135",
+    "name": "Palak Chakli",
+    "name_ml": "",
+    "price": 90,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "Palak Chakli",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "136",
+    "name": "Pure&sure Tea",
+    "name_ml": "",
+    "price": 215,
+    "category": "Beverages",
+    "make": "Generic",
+    "description": "Pure&sure Tea",
+    "variants": [
+      "250g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "137",
+    "name": "Kadak Chai",
+    "name_ml": "",
+    "price": 299,
+    "category": "Beverages",
+    "make": "Generic",
+    "description": "Kadak Chai",
+    "variants": [
+      "250g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "138",
+    "name": "Kk Green Tea",
+    "name_ml": "",
+    "price": 210,
+    "category": "Beverages",
+    "make": "Generic",
+    "description": "Kk Green Tea",
+    "variants": [
+      "250g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "139",
+    "name": "Kk Camomile Decaf Greentea",
+    "name_ml": "",
+    "price": 150,
+    "category": "Beverages",
+    "make": "Generic",
+    "description": "Kk Camomile Decaf Greentea",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "140",
+    "name": "Kk Camomile Herbal Infusion",
+    "name_ml": "",
+    "price": 150,
+    "category": "Beverages",
+    "make": "Generic",
+    "description": "Kk Camomile Herbal Infusion",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "141",
+    "name": "Pk Green Tea",
+    "name_ml": "",
+    "price": 200,
+    "category": "Beverages",
+    "make": "Generic",
+    "description": "Pk Green Tea",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "142",
+    "name": "P. K. Black Tea",
+    "name_ml": "",
+    "price": 160,
+    "category": "Beverages",
+    "make": "Generic",
+    "description": "P. K. Black Tea",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "143",
+    "name": "Kk Organic Black Tea",
+    "name_ml": "",
+    "price": 200,
+    "category": "Beverages",
+    "make": "Generic",
+    "description": "Kk Organic Black Tea",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "144",
+    "name": "Tulsi Tea",
+    "name_ml": "",
+    "price": 100,
+    "category": "Beverages",
+    "make": "Generic",
+    "description": "Tulsi Tea",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "145",
+    "name": "Henna Powder",
+    "name_ml": "",
+    "price": 100,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Henna Powder",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "146",
+    "name": "Red Sandal Powder",
+    "name_ml": "",
+    "price": 100,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Red Sandal Powder",
+    "variants": [
+      "40g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "147",
+    "name": "Kasthurimanjal Powder",
+    "name_ml": "",
+    "price": 50,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Kasthurimanjal Powder",
+    "variants": [
+      "30g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "148",
+    "name": "Amla Powder",
+    "name_ml": "",
+    "price": 60,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Amla Powder",
+    "variants": [
+      "50g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "149",
+    "name": "Aloevera Gel",
+    "name_ml": "",
+    "price": 130,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Aloevera Gel",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "150",
+    "name": "Soaptreez Washing Liquid",
+    "name_ml": "",
+    "price": 280,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Soaptreez Washing Liquid",
+    "variants": [
+      "500ml"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "151",
+    "name": "Attar Khus",
+    "name_ml": "",
+    "price": 210,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Attar Khus",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "152",
+    "name": "Rose Water",
+    "name_ml": "",
+    "price": 80,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Rose Water",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "153",
+    "name": "Coffe Cane Sugar & Body Scrub",
+    "name_ml": "",
+    "price": 540,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Coffe Cane Sugar & Body Scrub",
+    "variants": [
+      "90g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "154",
+    "name": "Hemp & Jojoba Body Butter",
+    "name_ml": "",
+    "price": 779,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Hemp & Jojoba Body Butter",
+    "variants": [
+      "50g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "155",
+    "name": "Indigo Powder",
+    "name_ml": "",
+    "price": 110,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Indigo Powder",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "156",
+    "name": "Neelayamarhair Oil",
+    "name_ml": "",
+    "price": 220,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Neelayamarhair Oil",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "157",
+    "name": "Neelayamari Shampoo",
+    "name_ml": "",
+    "price": 140,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Neelayamari Shampoo",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "158",
+    "name": "Bt. Alovera Gel",
+    "name_ml": "",
+    "price": 390,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Bt. Alovera Gel",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "159",
+    "name": "Green Clean",
+    "name_ml": "",
+    "price": 153,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Green Clean",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "160",
+    "name": "Thali Powder",
+    "name_ml": "",
+    "price": 50,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Thali Powder",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "161",
+    "name": "Vibhoothi",
+    "name_ml": "",
+    "price": 40,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Vibhoothi",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "162",
+    "name": "Bentodent Betel Leaftooth Paste",
+    "name_ml": "",
+    "price": 150,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Bentodent Betel Leaftooth Paste",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "163",
+    "name": "Vito Tooth Care",
+    "name_ml": "",
+    "price": 89,
+    "category": "Personal care",
+    "make": "Generic",
+    "description": "Vito Tooth Care",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "164",
+    "name": "Pappaya Soap",
+    "name_ml": "",
+    "price": 60,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Pappaya Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "165",
+    "name": "Ungu Soap",
+    "name_ml": "",
+    "price": 50,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Ungu Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "166",
+    "name": "Lemon Soap",
+    "name_ml": "",
+    "price": 50,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Lemon Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "167",
+    "name": "Oudh Soap",
+    "name_ml": "",
+    "price": 100,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Oudh Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "168",
+    "name": "Kasthurimanjal Soap",
+    "name_ml": "",
+    "price": 50,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Kasthurimanjal Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "169",
+    "name": "Manjal Soap",
+    "name_ml": "",
+    "price": 50,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Manjal Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "170",
+    "name": "Red Sandal Soap",
+    "name_ml": "",
+    "price": 60,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Red Sandal Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "171",
+    "name": "Ramacham Soap",
+    "name_ml": "",
+    "price": 50,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Ramacham Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "172",
+    "name": "Nellikka Soap",
+    "name_ml": "",
+    "price": 60,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Nellikka Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "173",
+    "name": "Greengram Soap",
+    "name_ml": "",
+    "price": 50,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Greengram Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "174",
+    "name": "Mughakanthi Soap",
+    "name_ml": "",
+    "price": 60,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Mughakanthi Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "175",
+    "name": "Nalpamaram Soap",
+    "name_ml": "",
+    "price": 60,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Nalpamaram Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "176",
+    "name": "Neem Soap",
+    "name_ml": "",
+    "price": 60,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Neem Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "177",
+    "name": "Kacholam Soap",
+    "name_ml": "",
+    "price": 50,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Kacholam Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "178",
+    "name": "Orange Peel Soap",
+    "name_ml": "",
+    "price": 60,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Orange Peel Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "179",
+    "name": "Triphala Soap",
+    "name_ml": "",
+    "price": 70,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Triphala Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "180",
+    "name": "Washing Soap",
+    "name_ml": "",
+    "price": 42,
+    "category": "Soaps",
+    "make": "Generic",
+    "description": "Washing Soap",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "181",
+    "name": "Hing",
+    "name_ml": "",
+    "price": 497,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "Hing",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "182",
+    "name": "Tamarind",
+    "name_ml": "",
+    "price": 175,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "Tamarind",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "183",
+    "name": "White Sesame",
+    "name_ml": "",
+    "price": 67,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "White Sesame",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "184",
+    "name": "Black Sesame",
+    "name_ml": "",
+    "price": 42,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "Black Sesame",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "185",
+    "name": "Irumban Puli",
+    "name_ml": "",
+    "price": 50,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "Irumban Puli",
+    "variants": [
+      "50g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "186",
+    "name": "Appalam",
+    "name_ml": "",
+    "price": 97,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "Appalam",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "187",
+    "name": "Jack Fruit Dried",
+    "name_ml": "",
+    "price": 130,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "Jack Fruit Dried",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "188",
+    "name": "Kudampuli",
+    "name_ml": "",
+    "price": 127,
+    "category": "Snacks and Miscellaneous",
+    "make": "Generic",
+    "description": "Kudampuli",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "189",
+    "name": "Agathi Ela",
+    "name_ml": "അകത്തി ഇല",
+    "price": 25,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Agathi Ela",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "190",
+    "name": "Brinjal Round",
+    "name_ml": "കത്തിരി",
+    "price": 54,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Brinjal Round",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "191",
+    "name": "Cluster Beans",
+    "name_ml": "അമരയ്ക്ക",
+    "price": 50,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Cluster Beans",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "192",
+    "name": "Garlic",
+    "name_ml": "വെളുത്തുള്ളി",
+    "price": 150,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Garlic",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "193",
+    "name": "Ivy Gourd",
+    "name_ml": "കോവയ്ക്ക",
+    "price": 55,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Ivy Gourd",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "194",
+    "name": "Small Oinon",
+    "name_ml": "ചെറിയ ഉള്ളി",
+    "price": 75,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Small Oinon",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "195",
+    "name": "Snake Gourd",
+    "name_ml": "പടവലം",
+    "price": 50,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Snake Gourd",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "196",
+    "name": "Mango Raspuri",
+    "name_ml": "",
+    "price": 115,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Mango Raspuri",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "197",
+    "name": "Mango Daseri",
+    "name_ml": "",
+    "price": 125,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Mango Daseri",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "198",
+    "name": "Banana Kaveri",
+    "name_ml": "കാവേരി",
+    "price": 30,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Banana Kaveri",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "199",
+    "name": "Avocado",
+    "name_ml": "",
+    "price": 175,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Avocado",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "200",
+    "name": "Imapasanth Semi Ripe",
+    "name_ml": "",
+    "price": 180,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Imapasanth Semi Ripe",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "201",
+    "name": "Ash Gourd",
+    "name_ml": "കുമ്പളം",
+    "price": 40,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Ash Gourd",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "202",
+    "name": "Brinjal",
+    "name_ml": "കത്തിരി",
+    "price": 54,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Brinjal",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "203",
+    "name": "Brinjal Long",
+    "name_ml": "വഴുതന",
+    "price": 65,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Brinjal Long",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "204",
+    "name": "Banana Stem",
+    "name_ml": "വാഴ പിണ്ടി",
+    "price": 15,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Banana Stem",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "205",
+    "name": "Banana Flower",
+    "name_ml": "വാഴ കുമ്പ്",
+    "price": 15,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Banana Flower",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "206",
+    "name": "Cut Vege Aviyal",
+    "name_ml": "",
+    "price": 95,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Cut Vege Aviyal",
+    "variants": [
+      "450g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "207",
+    "name": "Curry Leave",
+    "name_ml": "കറിവേപ്പില",
+    "price": 93,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Curry Leave",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "208",
+    "name": "Elephant Foot Yam",
+    "name_ml": "ചേന",
+    "price": 70,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Elephant Foot Yam",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "209",
+    "name": "Raw Banana",
+    "name_ml": "ഏത്ത കായ",
+    "price": 47,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Raw Banana",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "210",
+    "name": "Mint Leaves",
+    "name_ml": "പുതിന",
+    "price": 100,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Mint Leaves",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "211",
+    "name": "Paal Mulak",
+    "name_ml": "വെള്ള കാന്താരി",
+    "price": 50,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Paal Mulak",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "212",
+    "name": "Ponnakanni Cheera",
+    "name_ml": "",
+    "price": 30,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Ponnakanni Cheera",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "213",
+    "name": "Mango Moovandan Raw",
+    "name_ml": "",
+    "price": 60,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Mango Moovandan Raw",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "214",
+    "name": "Red Banana",
+    "name_ml": "",
+    "price": 45,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Red Banana",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "215",
+    "name": "Imapasanth",
+    "name_ml": "",
+    "price": 180,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Imapasanth",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "216",
+    "name": "Jack Fruit Unripe",
+    "name_ml": "പച്ച ചക്ക",
+    "price": 25,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Jack Fruit Unripe",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "217",
+    "name": "Suji Rava",
+    "name_ml": "",
+    "price": 60,
+    "category": "Wheat and Wheat Products",
+    "make": "Generic",
+    "description": "Suji Rava",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "218",
+    "name": "Wild Honey",
+    "name_ml": "",
+    "price": 490,
+    "category": "Sweeteners",
+    "make": "Generic",
+    "description": "Wild Honey",
+    "variants": [
+      "700g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "219",
+    "name": "Brown Sugar",
+    "name_ml": "",
+    "price": 160,
+    "category": "Sweeteners",
+    "make": "Generic",
+    "description": "Brown Sugar",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "220",
+    "name": "Chilly Piriyan Whole",
+    "name_ml": "",
+    "price": 44,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Chilly Piriyan Whole",
+    "variants": [
+      "50g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "221",
+    "name": "Pepper Powder",
+    "name_ml": "",
+    "price": 126,
+    "category": "Spices",
+    "make": "Generic",
+    "description": "Pepper Powder",
+    "variants": [
+      "50g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "222",
+    "name": "Millet Beetroot Dosa Mix",
+    "name_ml": "",
+    "price": 119,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Millet Beetroot Dosa Mix",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "223",
+    "name": "Millet Spinach Dosa Mix",
+    "name_ml": "",
+    "price": 119,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Millet Spinach Dosa Mix",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "224",
+    "name": "Millet Noodles Clasic Masala",
+    "name_ml": "",
+    "price": 129,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Millet Noodles Clasic Masala",
+    "variants": [
+      "192g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "225",
+    "name": "Millet Noodles Mild Masala",
+    "name_ml": "",
+    "price": 129,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Millet Noodles Mild Masala",
+    "variants": [
+      "192g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "226",
+    "name": "Jumbo Rolled Oats",
+    "name_ml": "",
+    "price": 249,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Jumbo Rolled Oats",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "227",
+    "name": "Millet Vermiceli",
+    "name_ml": "",
+    "price": 139,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Millet Vermiceli",
+    "variants": [
+      "180g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "228",
+    "name": "Cereal Wheat Apple & Banana",
+    "name_ml": "",
+    "price": 299,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Cereal Wheat Apple & Banana",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "229",
+    "name": "Cereal Mutirain Millet Mixed Fruit With Millet",
+    "name_ml": "",
+    "price": 349,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Cereal Mutirain Millet Mixed Fruit With Millet",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "230",
+    "name": "Cereal Straberry Ragi & Rice With Milk",
+    "name_ml": "",
+    "price": 349,
+    "category": "Seeds and Millets",
+    "make": "Generic",
+    "description": "Cereal Straberry Ragi & Rice With Milk",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "231",
+    "name": "Raisins Black",
+    "name_ml": "",
+    "price": 110,
+    "category": "Dry Fruits and Nuts",
+    "make": "Generic",
+    "description": "Raisins Black",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "232",
+    "name": "Cashewnut",
+    "name_ml": "",
+    "price": 158,
+    "category": "Dry Fruits and Nuts",
+    "make": "Generic",
+    "description": "Cashewnut",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "233",
+    "name": "Rock Salt Powder",
+    "name_ml": "",
+    "price": 65,
+    "category": "Salt",
+    "make": "Generic",
+    "description": "Rock Salt Powder",
+    "variants": [
+      "500g",
+      "1kg"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "234",
+    "name": "Salt",
+    "name_ml": "",
+    "price": 18,
+    "category": "Salt",
+    "make": "Generic",
+    "description": "Salt",
+    "variants": [],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "235",
+    "name": "Crystal Rock Salt",
+    "name_ml": "",
+    "price": 55,
+    "category": "Salt",
+    "make": "Generic",
+    "description": "Crystal Rock Salt",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "236",
+    "name": "Drumstick",
+    "name_ml": "മുരിങ്ങക്കായ",
+    "price": 105,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Drumstick",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "237",
+    "name": "Ridge Gourd",
+    "name_ml": "പീച്ചിങ്ങ",
+    "price": 49,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Ridge Gourd",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "238",
+    "name": "Zucchini",
+    "name_ml": "സുകിനി",
+    "price": 75,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Zucchini",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "239",
+    "name": "Mango Mallika",
+    "name_ml": "",
+    "price": 136,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Mango Mallika",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "240",
+    "name": "Papaya Big",
+    "name_ml": "",
+    "price": 36,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Papaya Big",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "241",
+    "name": "Muskmelon",
+    "name_ml": "",
+    "price": 55,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Muskmelon",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "242",
+    "name": "Pomagranate",
+    "name_ml": "",
+    "price": 180,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Pomagranate",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "243",
+    "name": "Cauliflower",
+    "name_ml": "കോളി ഫ്ലവർ",
+    "price": 60,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Cauliflower",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "244",
+    "name": "Coriander Leaves",
+    "name_ml": "",
+    "price": 75,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Coriander Leaves",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "245",
+    "name": "Sweet Corn",
+    "name_ml": "ചോളം",
+    "price": 48,
+    "category": "Vegetables",
+    "make": "Generic",
+    "description": "Sweet Corn",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "246",
+    "name": "Sweet Lime",
+    "name_ml": "",
+    "price": 75,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Sweet Lime",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": "limited"
+  },
+  {
+    "id": "247",
+    "name": "Banana Rasakadali",
+    "name_ml": "",
+    "price": 43,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Banana Rasakadali",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "248",
+    "name": "Musk Melon",
+    "name_ml": "",
+    "price": 55,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Musk Melon",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "249",
+    "name": "Mango Alponsa",
+    "name_ml": "",
+    "price": 120,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Mango Alponsa",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "250",
+    "name": "Ragi Flour",
+    "name_ml": "",
+    "price": 70,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Ragi Flour",
+    "variants": [
+      "500g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "251",
+    "name": "Wheat Flour",
+    "name_ml": "",
+    "price": 95,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Wheat Flour",
+    "variants": [
+      "1kg"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "252",
+    "name": "Sharbathi Wheat Flour",
+    "name_ml": "",
+    "price": 140,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Sharbathi Wheat Flour",
+    "variants": [
+      "1kg"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "253",
+    "name": "Coco Pop Energiser",
+    "name_ml": "",
+    "price": 120,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Coco Pop Energiser",
+    "variants": [
+      "100g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "254",
+    "name": "Millet Chivada",
+    "name_ml": "",
+    "price": 180,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Millet Chivada",
+    "variants": [
+      "300g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "255",
+    "name": "Curry Leaf Chutney Powder",
+    "name_ml": "",
+    "price": 110,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Curry Leaf Chutney Powder",
+    "variants": [
+      "100g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "256",
+    "name": "Mixed Masala",
+    "name_ml": "",
+    "price": 130,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Mixed Masala",
+    "variants": [
+      "100g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  },
+  {
+    "id": "257",
+    "name": "Peanut Butter",
+    "name_ml": "",
+    "price": 130,
+    "category": "Fruits",
+    "make": "Generic",
+    "description": "Peanut Butter",
+    "variants": [
+      "150g"
+    ],
+    "imageUrl": "images/placeholder.jpg",
+    "notes": ""
+  }
+]
